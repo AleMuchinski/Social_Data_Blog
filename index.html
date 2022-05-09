@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.98.0" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>How New York City Prioritizes Solving its Water Problems - Hugo Winston</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.fb5d1282ef81826b431e78c8cb0de3c94f82b2a0d338e8ac55d15b4f155c3ea3.css">
+  
+
+  
+    <meta name="description" content="."/>
+    <meta property="og:title" content="How New York City Prioritizes Solving its Water Problems"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/"/>
+    
+    <meta property="og:description" content="."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@zerostaticio"/>
+    <meta name="twitter:creator" content="@zerostaticio"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-home'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-about">
+                    <a href="/pages/about/">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-posts">
+                    <a href="/posts/">Posts</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Hugo Winston</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about">
+                <a href="/pages/about/">About</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="/posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+
+  
+    <div class="author author-large">
+  <img width="50" class="author-image" src="/images/dtu.png" alt="Alexandre Muchinski &amp; Gunnhildur Erlendsdóttir &amp; Helga Halldórsdóttir " />
+  <span class="author-name">Alexandre Muchinski &amp; Gunnhildur Erlendsdóttir &amp; Helga Halldórsdóttir </span>
+  <span class="author-title"></span>
+</div>
+  
+
+  <div class="intro">
+    <h1>How New York City Prioritizes Solving its Water Problems<span class="dot">.</span></h1>
+    <div class="intro-content"><p>We analyzed more than 24 million lines of data on water-related complaints in New York City over 5 years to understand how the city prioritizes solving its problems, and whether it has improved. Our project seeks to understand public policy patterns and share findings related to these problems.</p>
+<h2 id="introduction">Introduction</h2>
+<p>New York City has more than <strong><a href="https://worldpopulationreview.com/us-cities/new-york-city-ny-population">8 million residents</a></strong>, making it one of the largest cities in the United States, managing a city of this magnitude becomes a big challenge, especially in solving the problems of all its residents. To try to systematize these requests, the US government has set up a hotline called <strong><a href="https://portal.311.nyc.gov/">311</a></strong> where each resident can report non-emergency problems to the institutions in their city.</p>
+<p>Luckily for us, the city of New York shares all non-emergency requests. The <strong><a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9">dataset</a></strong> is really massive, from 2010 to 2021 there were more than 24 million requests between different institutions, the types of requests are extensive and we decided to filter all these datapoints  on water related problems, be it difficulties in distribution, water quality, water waste, etc&hellip; The reason we have chosen the topic of water is that distribution and quality of this type of basic service is a  <strong><a href="https://www.dec.ny.gov/lands/25599.html#:~:text=Some%20significant%20water%20quality%20concerns,Excess%20nutrients%2C%20particularly%20phosphorus.">real challenge for the City of New York</a></strong>, according to them, the disruption of water distribution in the current networks, sediments, odor, taste and color problems are serious challenges to be faced in order to establish the established quality goals of the <strong><a href="https://www.epa.gov/dwreginfo/drinking-water-regulations">Environmental Protection Agency (EPA)</a></strong></p>
+<p>Additionally, our focus is to understand how an institution acts when it comes to solving these problems and what are the influencing factors. It is not news that New York City has <strong><a href="https://www.numbeo.com/cost-of-living/rankings.jsp">one of the most expensive costs of living in the world</a></strong>, so our main question is, <strong>does New York City prioritize the solution of its water problems to the most expensive neighborhoods?</strong></p>
+<p>To get a &ldquo;proxy&rdquo; in understanding what classifies as a valued neighborhood, we researched real estate sales data made available by the <strong><a href="https://www1.nyc.gov/site/finance/taxes/property-rolling-sales-data.page">New York City Department of Finance</a></strong>, we can evaluate over 10 years the median price of real estate in different zip codes within the city and cross-reference it with the claims made by the <strong><a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9">311 report</a></strong>.</p>
+<p>And last but not least, to prove the number of complaints, the valuation of real estate in different neighborhoods, what makes more sense is to look for data collection on  <strong><a href="https://data.cityofnewyork.us/Environment/Watershed-Water-Quality-Data/y43c-5n92">water quality</a></strong> in New York City so we can understand this dynamics over the years.</p>
+<h2 id="understading-the-city-of-new-york-by-numbers">Understading The City of New York by numbers</h2>
+<p>As already said, living in New York City is expensive, and it has become even more so over the years, for analytical purposes let&rsquo;s stick to a 5 year period to understand how the city has evolved over the years.</p>
+<p><img src="https://i.imgur.com/uNXUOfJ.png" alt="Street Art Image"></p>
+<p>It is always important to understand where these market values are, so we have broken them down into neighborhoods where we can understand the differences between the regions in New York City</p>
+<p><img src="https://i.imgur.com/47qF1Hp.png" alt="Street Art Image"></p>
+<p><img src="https://i.imgur.com/P4vM4u5.png" alt="Street Art Image"></p>
+<p>Notice that the most valuable properties are on Manhattan Island, near the financial district and the central park, also, there is a big price difference to the other neighborhoods when compared to the whole city. Now What is impoetant to know is, <strong>in a time frame of 5 years did the prices increased by region and how the amount of complaints performed on the same period?</strong></p>
+<p><img src="https://i.imgur.com/fbp2Dj7.png" alt="Street Art Image"></p>
+<p>We can notice a rapid growth in property values within the city and at the same time a growth in complaints releated to water, the only exception being in the year 2020, most likely the year of the pandemic, when many people <strong><a href="https://www.nytimes.com/2022/01/07/realestate/pandemic-move-friends.html">left the city</a></strong>  due to the constant lockdowns. <strong>However,how much the growth of market value and complaints affected eash region? We gathered the top and bottom 5 from all neighborhoods to see this relation.</strong></p>
+<p><img src="https://i.imgur.com/mWD8wck.png" alt="Street Art Image"></p>
+<p>The following datasets were used:</p>
+<ol>
+<li>
+<p><strong>311 Service Requests:</strong>
+311 is a phone number used in the U.S. that allows callers to access non-emergency municipal services, report problems to government agencies, and request information. <a href="https://on.nyc.gov/3kBfgTM">https://on.nyc.gov/3kBfgTM</a></p>
+</li>
+<li>
+<p><strong>Watershed Water Quality Data:</strong>
+Data collected to fulfill the requirements of the SWTR (Surface Water Treatment Rule) and FAD (Filtration Avoidance Determination). Data is collected via grab sampling, analysis, LIMS data capture and reporting. Each record represents either a four hour turbidity result, a 24 hour average turbidty result, or a daily fecal coliform result from DEL18DT (Delaware Shaft 18 downtake). <a href="https://bit.ly/3LH68bY">https://bit.ly/3LH68bY</a></p>
+</li>
+<li>
+<p><strong>Rolling Sales Data:</strong>
+Annualized Sales files display yearly sales information of properties sold in New York City. These files also have information such as neighborhood, building type, square footage and other data. <a href="https://on.nyc.gov/3y6Bk0w">https://on.nyc.gov/3y6Bk0w</a></p>
+</li>
+<li>
+<p><strong>NYC ZIP Code Tabulation:</strong>
+This data set was used to fetch the polygons from each ZIP code in order to visualize the house prices in a spatial form together with the water quality indices in the city regions. <a href="https://bit.ly/39zPX2c">https://bit.ly/39zPX2c</a></p>
+</li>
+</ol>
+<p><img src="https://source.unsplash.com/GqpbdngfiLo/600x400" alt="Street Art Image"></p>
+<p>10170
+10167
+10172</p>
+</div>
+  </div>
+
+  
+
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/zerostaticio" title="twitter" target="_blank" rel="noopener">
+          <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/zerostaticthemes" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
